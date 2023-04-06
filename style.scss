@@ -389,7 +389,7 @@ p {
     }
 
     .carousel {
-        display: initial;
+        display: flex;
     }
 
     .carousel_text {
@@ -528,6 +528,7 @@ p {
         color: #FFFFFF;
     }
 
+
     .WEDO_tel {
         display: flex;
         flex-direction: row;
@@ -597,10 +598,6 @@ p {
     .center {
         padding-left: calc(50% - 202px);
         padding-right: calc(50% - 202px);
-    }
-
-    .WEDO {
-        display: none;
     }
 
     .button_tel {
