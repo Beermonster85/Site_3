@@ -65,6 +65,10 @@ a {
   color: rgba(28, 65, 193, 0.91);
 }
 
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0rem;
+}
+
 .button_tel {
   background-color: rgba(28, 65, 193, 0.91);
   padding-left: 50px;
@@ -86,6 +90,15 @@ a {
 .button_tel:hover {
   background-color: bisque;
   color: rgba(28, 65, 193, 0.91);
+  transform: scale(1.1);
+}
+
+.WEDO {
+  display: flex;
+  transition: 0.5s;
+}
+
+.WEDO:hover {
   transform: scale(1.1);
 }
 
@@ -477,7 +490,7 @@ p {
     display: none;
   }
   .carousel {
-    display: initial;
+    display: flex;
   }
   .carousel_text {
     display: initial;
@@ -637,9 +650,6 @@ p {
   .center {
     padding-left: calc(50% - 202px);
     padding-right: calc(50% - 202px);
-  }
-  .WEDO {
-    display: none;
   }
   .button_tel {
     display: none;
