@@ -1,0 +1,755 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    padding-left: calc(50% - 661px);
+    padding-right: calc(50% - 661px);
+}
+
+.container_main {
+    font-family: 'Inter', sans-serif;
+}
+
+@import"colors_style";
+@import"header";
+@import"_footer";
+
+
+@keyframes KirAnim {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70% {
+        transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60% {
+        transform: translateX(10px);
+    }
+
+    80% {
+        transform: translateX(8px);
+    }
+
+    90% {
+        transform: translateX(-8px);
+    }
+}
+
+
+.services {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.service {
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 157.8%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: $textColor_rear;
+}
+
+.types_deliveries {
+    transition: 0.5s;
+}
+
+.types_deliveries:hover {
+    transform: scale(1.1);
+}
+
+.decoration_pictures {
+    @extend.types_deliveries;
+}
+
+.ten_services {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 38px;
+    justify-content: space-between;
+}
+
+.all_services {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.services_headers {
+    margin-bottom: 28px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: $textColor_main;
+}
+
+.text_services {
+    width: 226px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: $textColor_main;
+}
+
+
+@keyframes color-change-2x {
+    0% {
+        background: $branColor_main;
+    }
+
+    100% {
+        background: #b22cff;
+    }
+}
+
+
+.special {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    animation: color-change-2x 2s linear infinite alternate both;
+}
+
+.special_events {
+    margin-bottom: 71px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 1px;
+    color: $textColor_secondary;
+}
+
+.three_events {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.events {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.events_header {
+    margin-bottom: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    color: $textColor_secondary;
+}
+
+.events_text {
+    width: 554px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: $textColor_secondary;
+}
+
+.picture_first {
+    transition: 0.5s;
+}
+
+.picture_first:hover {
+    animation: KirAnim 1s ease-in 0s 1 normal forwards;
+}
+
+.picture_second {
+    transition: 0.5s;
+}
+
+.picture_second:hover {
+    animation: KirAnim 1s ease-in 0s 1 normal forwards;
+}
+
+.company_history {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.about_company {
+    margin-bottom: 70px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: $textColor_rear;
+}
+
+.history {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.innovation {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.innovation_text {
+    width: 600px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: $textColor_main;
+}
+
+.innovation_center {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.carousel {
+    display: none;
+}
+
+.carousel_text {
+    display: none;
+}
+
+.adress {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 157%;
+    letter-spacing: 0.5px;
+    color: $textColor_secondary;
+}
+
+.tel_mail {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.social_media {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+.t {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 157%;
+    letter-spacing: 0.5px;
+    color: $textColor_secondary;
+    transition: 0.5s;
+}
+
+.t:hover {
+    color: bisque;
+}
+
+.m {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 157%;
+    letter-spacing: 0.5px;
+    color: $textColor_secondary;
+    transition: 0.5s;
+}
+
+.m:hover {
+    color: bisque;
+}
+
+.fa-brands {
+    font-size: 50px;
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
+.fa-brands:hover {
+    color: bisque;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+@media (max-width: 1340px) {
+
+    .center {
+        padding-left: calc(50% - 488px);
+        padding-right: calc(50% - 488px);
+    }
+
+    .links {
+        gap: 190px;
+    }
+
+    .ten_services {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .services {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .special {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .three_events {
+        gap: 65px;
+        justify-content: center;
+    }
+
+    .events {
+        gap: 10px;
+    }
+
+    .company_history {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .history {
+        display: none;
+    }
+
+    .carousel {
+        display: initial;
+    }
+
+    .carousel_text {
+        display: initial;
+    }
+
+    .innovation_text {
+        background-color: rgba(196, 196, 196, 0.3);
+        margin-top: 30px;
+        width: 100%;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        color: #1A2650;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .center {
+        padding-left: calc(50% - 364px);
+        padding-right: calc(50% - 364px);
+    }
+
+    .main_slogan {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 157.8%;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.88);
+        text-shadow: 0px 1px 8px rgba(0, 0, 0, 0.95);
+    }
+
+    .minor_slogan {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 157%;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.5px;
+        color: #FFFFFF;
+        text-shadow: 0px 1px 8px rgba(0, 0, 0, 0.95);
+    }
+
+    .services {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .service {
+        margin-bottom: 40px;
+    }
+
+    .ten_services {
+        gap: 9px;
+        justify-content: space-between;
+    }
+
+    .all_services {
+        gap: 6px;
+    }
+
+    .services_headers {
+        margin-bottom: 6px;
+    }
+
+    .special {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .special_events {
+        margin-bottom: 40px;
+    }
+
+    .three_events {
+        gap: 35px;
+    }
+
+    .company_history {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .about_company {
+        margin-bottom: 40px;
+    }
+
+    .info_table {
+        width: 463px;
+        background: #1c41c169;
+    }
+
+    .links {
+        gap: 100px;
+    }
+}
+
+
+@media (max-width: 780px) {
+
+    .center {
+        padding-left: calc(50% - 370px);
+        padding-right: calc(50% - 370px);
+    }
+
+
+    .dropdown {
+        display: initial;
+    }
+
+    .header_title {
+        display: none;
+    }
+
+    .btn {
+        background-color: $buttonColor_main;
+    }
+
+
+    .btn:hover {
+        color: var(--bs-btn-hover-color);
+        background-color: $textColor_main;
+        border-color: $buttonColor_main;
+    }
+
+    .dropdown-menu {
+        background-color: $buttonColor_main;
+    }
+
+    .dropdown-item {
+        color: #FFFFFF;
+    }
+
+    .WEDO_tel {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 750px) {
+
+
+    .center {
+        padding-left: calc(50% - 245px);
+        padding-right: calc(50% - 245px);
+    }
+
+    .WEDO_tel {
+        margin-top: 40px;
+    }
+
+    .ten_services {
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .events_text {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .innovation_text {
+        font-size: 18px;
+    }
+
+    .links {
+        gap: 50px;
+        justify-content: center;
+    }
+
+    .t {
+        font-size: 16px;
+    }
+
+    .m {
+        font-size: 16px;
+    }
+
+    .fa-brands {
+        font-size: 30px;
+        height: 0;
+    }
+
+    .social_media {
+        gap: 15px;
+    }
+
+    .header_title {
+        display: none;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+
+    .center {
+        padding-left: calc(50% - 202px);
+        padding-right: calc(50% - 202px);
+    }
+
+    .WEDO {
+        display: none;
+    }
+
+    .button_tel {
+        display: none;
+    }
+
+    .WEDO_tel {
+        display: initial;
+        display: flex;
+        margin-top: 164px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .main_slogan {
+        margin-top: 40px;
+        font-size: 30px;
+    }
+
+    .header_title {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .minor_slogan {
+        font-size: 20px;
+    }
+
+    .ten_services {
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .all_services {
+        align-items: center;
+    }
+
+    .picture_first {
+        display: none;
+    }
+
+    .picture_second {
+        display: none;
+    }
+
+    .special_events {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .events_header {
+        font-size: 20px;
+        justify-content: center;
+    }
+
+    .events_text {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .innovation_text {
+        font-size: 18px;
+    }
+
+    .info_table {
+        display: none;
+    }
+
+    .map {
+        padding-top: 10px;
+    }
+
+    .button_position {
+        margin-top: 372px;
+    }
+
+    .button_tel_second {
+        display: initial;
+        background-color: $buttonColor_main;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        border-radius: 6px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 0.3px;
+        color: $textColor_secondary;
+    }
+
+    .header_title {
+        display: none;
+    }
+
+    .service {
+        font-size: 30px;
+    }
+
+    .about_company {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 423px) {
+
+
+    .center {
+        padding-left: calc(50% - 172px);
+        padding-right: calc(50% - 172px);
+    }
+
+    .main_slogan {
+        font-size: 25px;
+    }
+
+    .minor_slogan {
+        text-align: center;
+    }
+
+    .events_header {
+        text-align: center;
+    }
+
+    .links {
+        gap: 24px;
+    }
+
+    .service {
+        font-size: 25px;
+    }
+
+    .special_events {
+        font-size: 25px;
+    }
+
+    .about_company {
+        font-size: 25px;
+    }
+
+    p {
+        margin-bottom: 0px;
+    }
+
+
+}

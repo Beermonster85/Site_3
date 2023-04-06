@@ -1,0 +1,109 @@
+@keyframes myAnim {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	100% {
+		background-position: 100% 50%;
+	}
+}
+
+.main_page {
+    padding-top: 24px;
+    padding-bottom: 500px;
+    background-image: url(https://i.postimg.cc/4dYdgLBV/1640906666-18-drikus-club-p-gruzovoi-korabl-v-more-tekhnika-krasivo-fo-19-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: myAnim 4s ease-in 0s 1 normal forwards;
+}
+
+.header_title {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_style {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: $textColor_secondary;
+    transition: 0.5s;
+}
+
+.main_style:hover {
+    color: $branColor_main;
+}
+
+.button_tel {
+    background-color: $buttonColor_main;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-radius: 6px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: $textColor_secondary;
+    transition: 0.5s;
+}
+
+.button_tel:hover {
+    background-color: bisque;
+    color: $buttonColor_main;
+    transform: scale(1.1);
+}
+
+
+.WEDO_tel {
+    display: none;
+}
+
+.button_tel_second {
+   display: none;
+}
+
+.main_slogan {
+    margin-top: 164px;
+    display: flex;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.88);
+    text-shadow: 0px 1px 8px rgb(0 0 0 / 95%);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.minor_slogan {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 157%;
+    display: flex;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    text-shadow: 0px 1px 8px rgb(0 0 0 / 95%);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dropdown {
+    display: none;
+}
