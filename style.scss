@@ -94,17 +94,17 @@ a {
 }
 
 .ten_services {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 38px;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(5, 226px);
+    grid-template-rows: repeat(2, 375px);
+    column-gap: 48px;
+    row-gap: 55px;
 }
 
 .all_services {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
+    flex-direction: column;
     gap: 16px;
     align-items: flex-start;
 }
@@ -117,7 +117,6 @@ a {
     line-height: 24px;
     display: flex;
     align-items: center;
-    text-align: center;
     color: $textColor_main;
 }
 
@@ -354,10 +353,11 @@ p {
     }
 
     .ten_services {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        display: grid;
+        grid-template-columns: repeat(3, 228px);
+        grid-template-rows: repeat(4, 374px);
+        justify-content: center;
+        row-gap: 48px;
     }
 
     .services {
@@ -448,8 +448,7 @@ p {
     }
 
     .ten_services {
-        gap: 9px;
-        justify-content: space-between;
+        gap: 16px;
     }
 
     .all_services {
@@ -551,8 +550,9 @@ p {
     }
 
     .ten_services {
-        gap: 20px;
-        justify-content: center;
+        grid-template-columns: repeat(2, 227px);
+        grid-template-rows: repeat(5, 342px);
+        gap: 26px;
     }
 
     .events_text {
@@ -592,7 +592,7 @@ p {
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 530px) {
 
 
     .center {
@@ -630,8 +630,9 @@ p {
     }
 
     .ten_services {
-        gap: 30px;
-        justify-content: center;
+        grid-template-columns: repeat(1, 227px);
+        grid-template-rows: repeat(10, 342px);
+        gap: 26px;
     }
 
     .all_services {
